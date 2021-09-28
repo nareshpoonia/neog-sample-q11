@@ -22,8 +22,10 @@ function changeHandler() {
   var userInput = passwordInput.value;
   if (userInput.length < 10) {
     submitButton.disabled = true;
+    passwordInput.style.color = "red";
   } else {
     submitButton.disabled = false;
+    passwordInput.style.color = "green";
   }
   console.log(userInput.length);
 }
